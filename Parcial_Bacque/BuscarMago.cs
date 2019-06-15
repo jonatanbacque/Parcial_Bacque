@@ -39,6 +39,7 @@ namespace Parcial_Bacque
                 dgvMagos.DataSource = funciones.MagosListar(cboMago.Text);
                 dgvMagos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
                 dgvMagos.Columns[0].Visible = false;
+
                 dgvHechizos.Visible = false;
                 lblHechizos.Visible = false;
                 btnHechizoAgregar.Visible = false;
