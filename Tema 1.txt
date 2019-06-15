@@ -1,0 +1,6 @@
+Listado de Magos
+Ver de Hechizos de cada Mago
+--
+Tema 1
+Filtrado de Magos
+Asociar Hechizos >> Seleccionable de una lista
