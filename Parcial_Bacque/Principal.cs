@@ -19,7 +19,10 @@ namespace Parcial_Bacque
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Close();
+            if (MessageBox.Show("¿Está seguro que desea salir","Hasta Pronto", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                Close();
+            }
         }
 
         private void btnListar_Click(object sender, EventArgs e)

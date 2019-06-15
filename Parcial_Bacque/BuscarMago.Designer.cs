@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvMagos = new System.Windows.Forms.DataGridView();
             this.cboMago = new System.Windows.Forms.ComboBox();
+            this.dgvMagos = new System.Windows.Forms.DataGridView();
             this.lblMago = new System.Windows.Forms.Label();
             this.dgvHechizos = new System.Windows.Forms.DataGridView();
             this.dgvHechizosTodos = new System.Windows.Forms.DataGridView();
@@ -43,20 +43,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvHechizosTodos)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvMagos
-            // 
-            this.dgvMagos.AllowUserToAddRows = false;
-            this.dgvMagos.AllowUserToDeleteRows = false;
-            this.dgvMagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMagos.Location = new System.Drawing.Point(15, 77);
-            this.dgvMagos.Name = "dgvMagos";
-            this.dgvMagos.ReadOnly = true;
-            this.dgvMagos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMagos.Size = new System.Drawing.Size(205, 267);
-            this.dgvMagos.TabIndex = 0;
-            this.dgvMagos.Visible = false;
-            this.dgvMagos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMagos_CellContentClick);
-            // 
             // cboMago
             // 
             this.cboMago.FormattingEnabled = true;
@@ -65,6 +51,22 @@
             this.cboMago.Size = new System.Drawing.Size(241, 21);
             this.cboMago.TabIndex = 1;
             this.cboMago.SelectedIndexChanged += new System.EventHandler(this.cboMago_SelectedIndexChanged);
+            // 
+            // dgvMagos
+            // 
+            this.dgvMagos.AllowUserToAddRows = false;
+            this.dgvMagos.AllowUserToDeleteRows = false;
+            this.dgvMagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMagos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvMagos.Location = new System.Drawing.Point(15, 77);
+            this.dgvMagos.MultiSelect = false;
+            this.dgvMagos.Name = "dgvMagos";
+            this.dgvMagos.ReadOnly = true;
+            this.dgvMagos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMagos.Size = new System.Drawing.Size(205, 267);
+            this.dgvMagos.TabIndex = 0;
+            this.dgvMagos.Visible = false;
+            this.dgvMagos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMagos_CellContentClick);
             // 
             // lblMago
             // 
@@ -80,7 +82,9 @@
             this.dgvHechizos.AllowUserToAddRows = false;
             this.dgvHechizos.AllowUserToDeleteRows = false;
             this.dgvHechizos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHechizos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvHechizos.Location = new System.Drawing.Point(235, 77);
+            this.dgvHechizos.MultiSelect = false;
             this.dgvHechizos.Name = "dgvHechizos";
             this.dgvHechizos.ReadOnly = true;
             this.dgvHechizos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -93,7 +97,9 @@
             this.dgvHechizosTodos.AllowUserToAddRows = false;
             this.dgvHechizosTodos.AllowUserToDeleteRows = false;
             this.dgvHechizosTodos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHechizosTodos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvHechizosTodos.Location = new System.Drawing.Point(455, 77);
+            this.dgvHechizosTodos.MultiSelect = false;
             this.dgvHechizosTodos.Name = "dgvHechizosTodos";
             this.dgvHechizosTodos.ReadOnly = true;
             this.dgvHechizosTodos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -103,11 +109,11 @@
             // lblMagoElegido
             // 
             this.lblMagoElegido.AutoSize = true;
-            this.lblMagoElegido.Location = new System.Drawing.Point(100, 52);
+            this.lblMagoElegido.Location = new System.Drawing.Point(43, 52);
             this.lblMagoElegido.Name = "lblMagoElegido";
-            this.lblMagoElegido.Size = new System.Drawing.Size(34, 13);
+            this.lblMagoElegido.Size = new System.Drawing.Size(149, 13);
             this.lblMagoElegido.TabIndex = 5;
-            this.lblMagoElegido.Text = "Mago";
+            this.lblMagoElegido.Text = "Elegir Mago Para Ver Hechizo";
             // 
             // lblHechizos
             // 

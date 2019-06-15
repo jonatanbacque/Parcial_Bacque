@@ -15,6 +15,7 @@ namespace Parcial_Bacque
     public partial class frmMagoBuscar : Form
     {
         Funciones funciones = new Funciones();
+        Magos mago;
 
         public frmMagoBuscar()
         {
@@ -56,10 +57,10 @@ namespace Parcial_Bacque
             Funciones funciones = new Funciones();
             try
             {
-                Magos magos = (Magos)dgvMagos.CurrentRow.DataBoundItem;
+                mago = (Magos)dgvMagos.CurrentRow.DataBoundItem;
 
                 dgvHechizos.Visible = true;
-                dgvHechizos.DataSource = funciones.HechizosListar(magos.ID);
+                dgvHechizos.DataSource = funciones.HechizosListar(mago.ID);
                 dgvHechizos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
                 dgvHechizos.Columns[0].Visible = false;
                 dgvHechizos.Columns[2].Visible = false;
